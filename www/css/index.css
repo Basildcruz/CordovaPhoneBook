@@ -1,0 +1,110 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    
+    background-color: #E4E4E4;
+    background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(0.51, #E4E4E4));
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+label {
+    font-weight: bold !important;
+    margin-top: 30px !important;
+}
+
+h1,
+a,
+label,
+p,
+.footer {
+    text-transform: none;
+}
+
+a.btn-changes {
+    font-weight: normal !important;
+    margin-top: 40px !important;
+    color: white !important;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: blue;
+}
+
+.contact-item {
+    padding-left: 20px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.contact-item:hover {
+    background: #0066FF !important;
+    color: white !important;
+}
+
+.contact-item h1 {
+    margin-left: -1px !important;
+    margin-bottom: -15px !important;
+    font-size: 25px !important;
+    text-align: left !important;
+}
+
+.contact-item p {
+    font-size: 20px !important;
+    text-align: left !important;
+}
+
+#add {
+    background: -webkit-linear-gradient(#33CC33, #009900);
+}
+
+#update {
+    background: -webkit-linear-gradient(#3399FF, #0066FF);
+}
+
+#listall {
+    background: -webkit-linear-gradient(#CC0099, #990099);
+}
