@@ -45,6 +45,7 @@ function onInsertContact(tx) {
     var email = $('#email').val();
     if (name.length > 0 && phone.length > 0 && email.length > 0) {
         tx.executeSql('INSERT INTO PhoneBook (name, phone, email) VALUES ("' + name + '", "' + phone + '","' + email + '")');
+        alert("Contact added.");
     } else {
         alert("Please enter all data.");
     }
@@ -59,8 +60,8 @@ function onUpdateContact(tx) {
     var phone = $('#phone').val();
     var email = $('#email').val();
     if (name.length > 0 && phone.length > 0 && email.length > 0) {
-        alert('UPDATE PhoneBook SET name="' + name + '", email="' + email + '" WHERE phone="' + phone + '"');
         tx.executeSql('UPDATE PhoneBook SET name="' + name + '", email="' + email + '" WHERE phone="' + phone + '"');
+        alert("Contact updated.");
     } else {
         alert("Please enter all data.");
     }
